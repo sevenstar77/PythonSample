@@ -23,6 +23,6 @@ def unicode_test(value):
 
 snowman = '\u2603'
 print(len(snowman))
-print(snowman)
-print(snowman.encode('utf-8'))
+#print(snowman)
+#print(snowman.encode('utf-8'))
 print(len(snowman.encode('utf-8')))
