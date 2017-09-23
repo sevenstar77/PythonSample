@@ -28,7 +28,8 @@ try:
 
     # text 보낼경우
     # text = 'test send'
-    # msg = MIMEText(text)
+    # msg = MIMEText(text) #default 일경우 아스키 코드 한글 사용시 아래와 같이 encode
+    #msg = MIMEText(text.encode('utf-8'), _charset='utf-8')
 
     msg['Subject'] = 'gmail send test'
     msg['From'] = senderMail
