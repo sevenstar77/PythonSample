@@ -35,12 +35,23 @@ def getTag(url, tagName='h1'):
 
 
 
-tagText = getTag('websites...')
-if tagText is None:
-    print(' %s not found ', tagText)
+#tagText = getTag('websites...')
+#if tagText is None:
+#    print(' %s not found ', tagText)"h1",
+#else:
+#    print(tagText)
 
-else:
-    print(tagText)
+
+html = urlopen('')
+bsObj = BeautifulSoup(html, 'html.parser')
+spanTagData = bsObj.findAll("span", {"class": "green"})
+#for tagData in spanTagData:
+    #print(tagData) #tag with print
+    #print(tagData.get_text()) #tag ignore print
+
+hTag = bsObj.findAll({"h1", "h2","h3","h4","h5","h6"})
+for tag in hTag:
+    print(tag)
 
 
 
