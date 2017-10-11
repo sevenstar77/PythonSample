@@ -1,5 +1,4 @@
 from itertools import count
-from itertools import
 import itertools
 
 alpa_1 = ['a', 'b', 'c', 'd']
