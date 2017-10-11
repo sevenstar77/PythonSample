@@ -54,5 +54,6 @@ if __name__ == '__main__':
     # print(ac1.get_alphbat())
 
     ac3 = AccessV3()
-    ac3.alphabet = 'J'
+    ac3.alphabet = 'Z'
+    #에러발생
     print(ac3.alphabet)
