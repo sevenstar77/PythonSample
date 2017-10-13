@@ -16,3 +16,12 @@ for row in rows:
     dataDict = dict(zip(columns, row)) #  colums, row to dic
 
 
+#commit / rollback
+isSuccess = True
+conn = pymssql.connect(host='your mssql server ip', user='', password='', database='')
+cur = conn.cursor()
+cur.execute('create table reservation(reservationNum text, name text);')
+if isSuccess == True:
+    conn.commit()
+else:
+    conn.rollback()
