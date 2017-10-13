@@ -49,7 +49,7 @@ spanTagData = bsObj.findAll("span", {"class": "green"})
     #print(tagData) #tag with print
     #print(tagData.get_text()) #tag ignore print
 
-hTag = bsObj.findAll({"h1", "h2","h3","h4","h5","h6"})
+hTag = bsObj.findAll({"h1", "h2", "h3", "h4", "h5", "h6"})
 for tag in hTag:
     print(tag)
 
