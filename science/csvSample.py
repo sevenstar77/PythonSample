@@ -14,7 +14,7 @@ for row in rows:
     cells = row.split(",")
     listData.append(cells)
 
-#print(listData)
+print(listData)
 
 for c in listData:
     print(c[1], c[2], c[3])
