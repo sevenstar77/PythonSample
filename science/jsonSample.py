@@ -22,10 +22,13 @@ json_data = {
   "address": "jungle"
 }
 
+ #json create
 # with open(path, "w") as export_json:
 #     json.dump(json_data, export_json, indent=None, sort_keys=False)
 #
 
+
+#json file load
 with open(path) as import_json:
     obj1 = json.load(import_json)
     print(type(obj1))
