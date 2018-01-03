@@ -37,7 +37,6 @@ result8 = re.sub(r'\d+', "xxxx", string3)
 print(result8)
 
 
-
 regex = re.compile(r'(\d+)-(\d+)-(\d+)')
 
 phoneNum = regex.match('010-1111-1421')
