@@ -36,3 +36,24 @@ string3 = "my phone number is 010 - 7777 - 6666 , nice to meeet you"
 result8 = re.sub(r'\d+', "xxxx", string3)
 print(result8)
 
+
+
+regex = re.compile(r'(\d+)-(\d+)-(\d+)')
+
+phoneNum = regex.match('010-1111-1421')
+
+print(phoneNum.group())
+print(phoneNum.group(1))
+
+
+regex1 = re.compile(r'(?P<first>\w+) (?P<last>\w+)')
+
+names = regex1.match('minsoo k is people')
+
+print(names.groups())
+print(names.group(0))
+print(names.group('first'))
+print(names.group('last'))
+print(names.groupdict())
+print(names.expand(r'last: \1'))
+print(names.expand(r'\2'))
