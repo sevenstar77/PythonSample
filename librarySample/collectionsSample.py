@@ -51,3 +51,21 @@ except:
     print(traceback.format_exc())
 
 
+
+names = {'kim' : 1, 'jin' : 2, 'park': 3, 'jo': 4, 'lee': 5, 'ho': 6}
+
+# for name in names:
+#     print(name)
+
+import json
+
+datas = collections.OrderedDict(names)
+
+#print(datas)
+#print(datas['jin'])
+for key, data in datas.items():
+    print('key : {0}, value : {1}'.format(key, data))
+
+jsonDatas = json.dumps(datas)
+print('type : ', type(jsonDatas))
+print('json : ', jsonDatas)
